@@ -7,6 +7,7 @@ package reditt;
 
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import mx.itson.reditt.entidades.Comentario;
@@ -30,162 +31,176 @@ public class Main {
         u.setCorreo("mike.correo@gmail.com");
         u.setPassword("BasketMike");
         u.setPais("Estados Unidos");
-        
+
         Usuario u2 = new Usuario();
         u2.setNombre("JohnyK");
         u2.setCorreo("jonny.correo@gmail.com");
         u2.setPassword("JhonsonKeyson");
         u2.setPais("Estados Unidos");
-        
+
         Usuario u3 = new Usuario();
         u3.setNombre("BounceLord");
         u3.setCorreo("bryan.correo@gmail.com");
         u3.setPassword("bryantastic");
         u3.setPais("Estados Unidos");
-        
+
         Usuario u4 = new Usuario();
         u4.setNombre("BasketMan");
         u4.setCorreo("bron.correo@gmail.com");
         u4.setPassword("LeJohn");
         u4.setPais("Estados Unidos");
-        
+
         Usuario u5 = new Usuario();
         u5.setNombre("RingMaster");
         u5.setCorreo("ring.correo@gmail.com");
         u5.setPassword("ringStyle");
         u5.setPais("Estados Unidos");
-        
+
         Usuario u6 = new Usuario();
         u6.setNombre("Los Angelesls");
         u6.setCorreo("angel.correo@gmail.com");
         u6.setPassword("LAgame");
         u6.setPais("Mexico");
-        
+
         Usuario u7 = new Usuario();
         u7.setNombre("jetsSteeg");
         u7.setCorreo("jay.correo@gmail.com");
         u7.setPassword("combatJet");
         u7.setPais("Canada");
-        
+
         Usuario u8 = new Usuario();
         u8.setNombre("Sillysolomon");
         u8.setCorreo("solomon.correo@gmail.com");
         u8.setPassword("SolomonWisdom");
         u8.setPais("England");
-        
+
         Usuario u9 = new Usuario();
         u9.setNombre("1LeakShow7");
         u9.setCorreo("just.correo@gmail.com");
         u9.setPassword("justinBarley");
         u9.setPais("Estados Unidos");
-        
+
         Usuario u10 = new Usuario();
         u10.setNombre("This-May-Be-It");
         u10.setCorreo("maurice.correo@gmail.com");
         u10.setPassword("So-Let-It-Be");
         u10.setPais("España");
-        
+
         Usuario u11 = new Usuario();
         u11.setNombre("presidentArea");
         u11.setCorreo("kenny.correo@gmail.com");
         u11.setPassword("restictedAccess");
         u11.setPais("Estados Unidos");
-        
+
         Usuario u12 = new Usuario();
         u12.setNombre("AlveiFencer");
         u12.setCorreo("fence.correo@gmail.com");
         u12.setPassword("fenceLooks");
         u12.setPais("Estados Unidos");
-        
+
         Usuario u13 = new Usuario();
         u13.setNombre("guiltyTechnician");
         u13.setCorreo("carlo.correo@gmail.com");
         u13.setPassword("binary000110011");
         u13.setPais("Mexico");
 
+        Calendar calendar = Calendar.getInstance();
+        calendar.clear();
+        calendar.set(2023, 2, 8);
+        
+        Calendar calendar2 = Calendar.getInstance();
+        calendar2.clear();
+        calendar2.set(2020, 8, 18);
+        
+        Calendar calendar3 = Calendar.getInstance();
+        calendar3.clear();
+        calendar3.set(2017, 12, 3);
+        
         List<Comentario> comentarios = new ArrayList<>();
         Comentario c1 = new Comentario();
         c1.setUsuario("JohnyK");
         c1.setCuerpo("Nice to share this with y’all");
         c1.setPuntos(1);
-        c1.setFecha(Date.from(Instant.MIN));
-        
+        c1.setFecha(calendar.getTime());
+
         Comentario c2 = new Comentario();
         c2.setUsuario("BounceLord");
         c2.setCuerpo("Too many TO's also like, wtf is wrong with your hands? "
                 + "How do you not handle the ball if you have big hands it is "
                 + "so frustrating to watch.");
         c2.setPuntos(10);
-        c2.setFecha(Date.from(Instant.MAX));
-        
+        c2.setFecha(calendar2.getTime());
+
         Comentario c3 = new Comentario();
         c3.setUsuario("BasketMan");
         c3.setCuerpo("He does tend to disappear. His worst feature by far.");
         c3.setPuntos(5);
-        c3.setFecha(Date.from(Instant.MAX));
+        c3.setFecha(calendar.getTime());
 
         Comentario c4 = new Comentario();
         c4.setUsuario("RingMaster");
         c4.setCuerpo("Would you rather have Davis or the Suns' Deandre Ayton?");
         c4.setPuntos(1);
-        c4.setFecha(Date.from(Instant.MAX));
-        
+        c4.setFecha(calendar3.getTime());
+
         List<Comentario> comentarios2 = new ArrayList<>();
         Comentario c5 = new Comentario();
         c5.setUsuario("Los Angeles1s");
         c5.setCuerpo("I cant really see Kyrie staying after this year with "
                 + "Dallas tbh");
         c5.setPuntos(16);
-        c5.setFecha(Date.from(Instant.MAX));
-        
+        c5.setFecha(calendar.getTime());
+
         Comentario c6 = new Comentario();
         c6.setUsuario("jetsStreeg");
         c6.setCuerpo("If they give him the money he wants he will");
         c6.setPuntos(15);
-        c6.setFecha(Date.from(Instant.MAX));
-        
+        c6.setFecha(calendar3.getTime());
+
         Comentario c7 = new Comentario();
         c7.setUsuario("Sillysolomon");
         c7.setCuerpo("I can't see staying past 3 weeks.");
         c7.setPuntos(50);
-        c7.setFecha(Date.from(Instant.MAX));
+        c7.setFecha(calendar2.getTime());
 
         Comentario c8 = new Comentario();
         c8.setUsuario("1LeakShow7");
         c8.setCuerpo("Now we can stop it with the bs rumors. Every year man "
                 + "same bs during trade deadline.");
         c8.setPuntos(68);
-        c8.setFecha(Date.from(Instant.MAX));
-        
+        c8.setFecha(calendar3.getTime());
+
         List<Comentario> comentarios3 = new ArrayList<>();
         Comentario c9 = new Comentario();
         c9.setUsuario("This-May-Be-It");
         c9.setCuerpo("Perfect summary of my thoughts lol.");
         c9.setPuntos(158);
-        c9.setFecha(Date.from(Instant.MAX));
-        
+        c9.setFecha(calendar3.getTime());
+
         Comentario c10 = new Comentario();
         c10.setUsuario("presidentArea");
         c10.setCuerpo("This loss really hurt. Golden opportunity to make some "
                 + "ground in the standings, especially with Zion out.");
         c10.setPuntos(150);
-        c10.setFecha(Date.from(Instant.MAX));
-        
+        c10.setFecha(calendar.getTime());
+
         Comentario c11 = new Comentario();
         c11.setUsuario("AlveinFencer");
         c11.setCuerpo("Sounds about right.");
         c11.setPuntos(510);
-        c11.setFecha(Date.from(Instant.MAX));
+        c11.setFecha(calendar2.getTime());
 
         Comentario c12 = new Comentario();
         c12.setUsuario("guiltyTechnician");
         c12.setCuerpo("you were probably gunning for Kyrie to come here");
         c12.setPuntos(343);
-        c12.setFecha(Date.from(Instant.MAX));
-        
+        c12.setFecha(calendar.getTime());
+
         Comunidad c = new Comunidad();
+        List<Usuario> usuarios = new ArrayList<>();
+        
         c.setNombre("r/lakers");
-        c.setUsuarios((List<Usuario>) u);
+        c.setUsuarios(usuarios);
 
         List<Post> posts = new ArrayList<>();
 
@@ -193,7 +208,7 @@ public class Main {
         post1.setTitulo("[2/7 @ 7:00] Los Angeles Lakers (25-29) vs Oklahoma "
                 + "City Thunder (25-28)");
         post1.setContenido("The bot didn't make a thread oops.");
-        post1.setFecha(Date.from(Instant.MIN));
+        post1.setFecha(calendar.getTime());
         post1.setPuntos(156);
         post1.setComentarios(comentarios);
         post1.setUsuario(u);
@@ -205,7 +220,7 @@ public class Main {
                 + "Finney-Smith, a first-round and multiple second-round picks,"
                 + "sources tell @TheAthletic @Stadium.");
         post2.setContenido("El tweet de la noticia en cuestion");
-        post2.setFecha(Date.from(Instant.MIN));
+        post2.setFecha(calendar2.getTime());
         post2.setPuntos(2000);
         post2.setComentarios(comentarios2);
         post2.setUsuario(u);
@@ -217,12 +232,19 @@ public class Main {
                 + "Kyrie has been a huge distraction to every organization he’s "
                 + "been in. I feel like we are gonna be better off with other "
                 + "pieces besides him.");
-        post3.setFecha(Date.from(Instant.MIN));
+        post3.setFecha(calendar3.getTime());
         post3.setPuntos(995);
         post3.setComentarios(comentarios3);
         post3.setUsuario(u);
         post3.setComunidad(c);
-        
+
         u.setKarma(post1.getPuntos() + post2.getPuntos() + post3.getPuntos());
+
+        for (Usuario i : c.getUsuarios()) {
+            System.out.println(".-" + i.getNombre());
+        }
+        for (Post p : posts) {
+            System.out.println(".-" + p.getTitulo() + ".-" + p.getContenido());
+        }
     }
 }
