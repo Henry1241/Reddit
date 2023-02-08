@@ -30,6 +30,78 @@ public class Main {
         u.setCorreo("mike.correo@gmail.com");
         u.setPassword("BasketMike");
         u.setPais("Estados Unidos");
+        
+        Usuario u2 = new Usuario();
+        u2.setNombre("JohnyK");
+        u2.setCorreo("jonny.correo@gmail.com");
+        u2.setPassword("JhonsonKeyson");
+        u2.setPais("Estados Unidos");
+        
+        Usuario u3 = new Usuario();
+        u3.setNombre("BounceLord");
+        u3.setCorreo("bryan.correo@gmail.com");
+        u3.setPassword("bryantastic");
+        u3.setPais("Estados Unidos");
+        
+        Usuario u4 = new Usuario();
+        u4.setNombre("BasketMan");
+        u4.setCorreo("bron.correo@gmail.com");
+        u4.setPassword("LeJohn");
+        u4.setPais("Estados Unidos");
+        
+        Usuario u5 = new Usuario();
+        u5.setNombre("RingMaster");
+        u5.setCorreo("ring.correo@gmail.com");
+        u5.setPassword("ringStyle");
+        u5.setPais("Estados Unidos");
+        
+        Usuario u6 = new Usuario();
+        u6.setNombre("Los Angelesls");
+        u6.setCorreo("angel.correo@gmail.com");
+        u6.setPassword("LAgame");
+        u6.setPais("Mexico");
+        
+        Usuario u7 = new Usuario();
+        u7.setNombre("jetsSteeg");
+        u7.setCorreo("jay.correo@gmail.com");
+        u7.setPassword("combatJet");
+        u7.setPais("Canada");
+        
+        Usuario u8 = new Usuario();
+        u8.setNombre("Sillysolomon");
+        u8.setCorreo("solomon.correo@gmail.com");
+        u8.setPassword("SolomonWisdom");
+        u8.setPais("England");
+        
+        Usuario u9 = new Usuario();
+        u9.setNombre("1LeakShow7");
+        u9.setCorreo("just.correo@gmail.com");
+        u9.setPassword("justinBarley");
+        u9.setPais("Estados Unidos");
+        
+        Usuario u10 = new Usuario();
+        u10.setNombre("This-May-Be-It");
+        u10.setCorreo("maurice.correo@gmail.com");
+        u10.setPassword("So-Let-It-Be");
+        u10.setPais("España");
+        
+        Usuario u11 = new Usuario();
+        u11.setNombre("presidentArea");
+        u11.setCorreo("kenny.correo@gmail.com");
+        u11.setPassword("restictedAccess");
+        u11.setPais("Estados Unidos");
+        
+        Usuario u12 = new Usuario();
+        u12.setNombre("AlveiFencer");
+        u12.setCorreo("fence.correo@gmail.com");
+        u12.setPassword("fenceLooks");
+        u12.setPais("Estados Unidos");
+        
+        Usuario u13 = new Usuario();
+        u13.setNombre("guiltyTechnician");
+        u13.setCorreo("carlo.correo@gmail.com");
+        u13.setPassword("binary000110011");
+        u13.setPais("Mexico");
 
         List<Comentario> comentarios = new ArrayList<>();
         Comentario c1 = new Comentario();
@@ -60,30 +132,30 @@ public class Main {
         
         List<Comentario> comentarios2 = new ArrayList<>();
         Comentario c5 = new Comentario();
-        c1.setUsuario("Los Angeles1s");
-        c1.setCuerpo("I cant really see Kyrie staying after this year with "
+        c5.setUsuario("Los Angeles1s");
+        c5.setCuerpo("I cant really see Kyrie staying after this year with "
                 + "Dallas tbh");
-        c1.setPuntos(16);
-        c1.setFecha(Date.from(Instant.MAX));
+        c5.setPuntos(16);
+        c5.setFecha(Date.from(Instant.MAX));
         
         Comentario c6 = new Comentario();
-        c2.setUsuario("jetsStreeg");
-        c2.setCuerpo("If they give him the money he wants he will");
-        c2.setPuntos(15);
-        c2.setFecha(Date.from(Instant.MAX));
+        c6.setUsuario("jetsStreeg");
+        c6.setCuerpo("If they give him the money he wants he will");
+        c6.setPuntos(15);
+        c6.setFecha(Date.from(Instant.MAX));
         
         Comentario c7 = new Comentario();
-        c3.setUsuario("Sillysolomon");
-        c3.setCuerpo("I can't see staying past 3 weeks.");
-        c3.setPuntos(50);
-        c3.setFecha(Date.from(Instant.MAX));
+        c7.setUsuario("Sillysolomon");
+        c7.setCuerpo("I can't see staying past 3 weeks.");
+        c7.setPuntos(50);
+        c7.setFecha(Date.from(Instant.MAX));
 
         Comentario c8 = new Comentario();
-        c4.setUsuario("1LeakShow7");
-        c4.setCuerpo("Now we can stop it with the bs rumors. Every year man "
+        c8.setUsuario("1LeakShow7");
+        c8.setCuerpo("Now we can stop it with the bs rumors. Every year man "
                 + "same bs during trade deadline.");
-        c4.setPuntos(68);
-        c4.setFecha(Date.from(Instant.MAX));
+        c8.setPuntos(68);
+        c8.setFecha(Date.from(Instant.MAX));
         
         List<Comentario> comentarios3 = new ArrayList<>();
         Comentario c9 = new Comentario();
